@@ -1,0 +1,46 @@
+git <rem></rem><?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>1.7</version>
+  </skin>
+  <publishDate position="right"/>
+  <version position="right"/>
+  <custom>
+    <fluidoSkin>
+      <!-- use only the topbar -->
+      <topBarEnabled>true</topBarEnabled>
+      <navBarStyle>navbar-inverse</navBarStyle>
+      <sideBarEnabled>false</sideBarEnabled>
+
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+
+      <gitHub>
+        <projectId>toolisticon/maven-oss-parent</projectId>
+        <ribbonOrientation>right</ribbonOrientation>
+        <ribbonColor>red</ribbonColor>
+      </gitHub>
+      <twitter>
+        <user>holisticon</user>
+        <showUser>true</showUser>
+        <showFollowers>true</showFollowers>
+      </twitter>
+    </fluidoSkin>
+  </custom>
+
+  <body>
+    <breadcrumbs>
+      <!-- TODO: This breadcrumb should be removed when it has been solved in the parent -->
+      <item name="Home" href="/index.html"/>
+    </breadcrumbs>
+    <links>
+      <item name="Holisticon AG" href="https://holisticon.de"/>
+    </links>
+    <menu ref="reports"/>
+
+    <menu name="Versions">
+      <item href="/" name="latest"/>
+    </menu>
+  </body>
+</project>
